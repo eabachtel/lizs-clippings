@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== META AND HEAD CONTENT ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Tips - Wild & Rooted</title>
+    <meta name="description" content="Simple plant care guides for popular houseplants: pothos, snake plant, spider plant, and more.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========== GLOBAL: SITE HEADER ========== -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-script">Wild & Rooted</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="care.html" aria-current="page">Care Tips</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="header-cart">
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count-badge" id="header-cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== CARE: HEADER ========== -->
+        <section class="page-header">
+            <h1>Plant Care Tips</h1>
+            <p>Real life care for real life plants. Nothing fancy, just what works.</p>
+        </section>
+
+        <!-- ========== CARE: PLANT CARE GRID ========== -->
+        <section class="section">
+            <div class="card-grid care-grid">
+                <!-- Each card can stay simple and copyable for more plants later -->
+                <article class="care-card">
+                    <h2>Pothos</h2>
+                    <p><strong>Light:</strong> Bright indirect to low light. Avoid strong direct sun on leaves.</p>
+                    <p><strong>Water:</strong> Let the top 1 to 2 inches of soil dry before watering. Leaves drooping a bit often means it is time.</p>
+                    <p><strong>Notes:</strong> Very forgiving. Trim vines to keep it full, and root cuttings in water or soil to create new pots.</p>
+                </article>
+
+                <article class="care-card">
+                    <h2>Snake Plant</h2>
+                    <p><strong>Light:</strong> Low to bright indirect light. Handles low light well.</p>
+                    <p><strong>Water:</strong> Water sparingly. Let soil dry almost completely. In winter, water even less often.</p>
+                    <p><strong>Notes:</strong> Great for forgetful waterers. Use a well draining soil and a pot with drainage holes.</p>
+                </article>
+
+                <article class="care-card">
+                    <h2>Spider Plant</h2>
+                    <p><strong>Light:</strong> Bright indirect light for best growth.</p>
+                    <p><strong>Water:</strong> Keep soil lightly moist but not soggy. Let the top of the soil dry slightly between waterings.</p>
+                    <p><strong>Notes:</strong> Produces baby plants that can be potted up once they form small roots.</p>
+                </article>
+
+                <article class="care-card">
+                    <h2>ZZ Plant</h2>
+                    <p><strong>Light:</strong> Low to medium indirect light. Avoid full direct sun.</p>
+                    <p><strong>Water:</strong> Water when the soil is fully dry. Thick roots and stems store water.</p>
+                    <p><strong>Notes:</strong> Great low maintenance plant. Use caution with pets and kids who nibble on leaves.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== GLOBAL: SITE FOOTER ========== -->
+    <footer class="site-footer">
+        <p>&copy; <span id="footer-year"></span> Wild & Rooted.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
