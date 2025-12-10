@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== META AND HEAD CONTENT ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Wild & Rooted</title>
+    <meta name="description" content="Review the plant cuttings in your cart before checkout. Edit quantities or remove items as needed.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========== GLOBAL: SITE HEADER ========== -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-script">Wild & Rooted</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="care.html">Care Tips</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="header-cart">
+            <a href="cart.html" class="cart-link" aria-current="page">
+                <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count-badge" id="header-cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== CART: PAGE HEADER ========== -->
+        <section class="page-header">
+            <h1>Your Cart</h1>
+            <p>Review your plants before you check out. You can change quantities or remove items here.</p>
+        </section>
+
+        <!-- ========== CART: CONTENT ========== -->
+        <section class="section">
+            <!-- Container where the cart items will be rendered by scripts.js -->
+            <div id="cart-container" class="cart-container">
+                <!-- JavaScript will inject cart rows and totals here -->
+            </div>
+
+            <div class="cart-actions">
+                <a href="shop.html" class="btn btn-outline">Continue Shopping</a>
+                <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== GLOBAL: SITE FOOTER ========== -->
+    <footer class="site-footer">
+        <p>&copy; <span id="footer-year"></span> Wild & Rooted.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
