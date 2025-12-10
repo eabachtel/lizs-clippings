@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloe Vera - Wild & Rooted</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Wild & Rooted</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="care.html">Care Tips</a>
+           <a href="cart.html" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i> <!-- Cart Icon -->
+</a>
+
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h2>Aloe Vera</h2>
+        <img src="images/aloe.jpg" alt="Aloe Vera">
+        <p><strong>Price:</strong> $8.00</p>
+
+        <!-- Order Form -->
+        <form action="cart.html" method="post">
+            <label for="quantity">Quantity (Max 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" required>
+
+            <label for="shipping">Shipping:</label>
+            <select id="shipping" name="shipping">
+                <option value="free">Free (Standard Shipping)</option>
+                <option value="expedited">Expedited - $5.00</option>
+                <option value="overnight">Overnight - $15.00</option>
+            </select>
+
+            <button type="submit">Add to Cart</button>
+        </form>
+    </main>
+</body>
+</html>
