@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== META AND HEAD CONTENT ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Details - Wild & Rooted</title>
+    <meta name="description" content="Details, pricing, and care overview for a specific Wild & Rooted plant cutting.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========== GLOBAL: SITE HEADER ========== -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-script">Wild & Rooted</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="care.html">Care Tips</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="header-cart">
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count-badge" id="header-cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== PRODUCT: PAGE HEADER ========== -->
+        <section class="page-header">
+            <h1 id="product-name-heading">Plant Details</h1>
+            <p id="product-tagline">Loading plant info...</p>
+        </section>
+
+        <!-- ========== PRODUCT: MAIN CONTENT ========== -->
+        <section class="section">
+            <div class="product-layout">
+                <!-- Left side: image -->
+                <div class="product-image-wrapper">
+                    <img id="product-image" src="images/placeholder.jpg" alt="Plant image" class="product-main-image">
+                </div>
+
+                <!-- Right side: details and add to cart -->
+                <div class="product-info">
+                    <h2 id="product-name"></h2>
+                    <p id="product-description" class="product-description"></p>
+
+                    <p class="product-price-line">
+                        <span id="product-price" class="price"></span>
+                        <span class="product-size" id="product-size"></span>
+                    </p>
+
+                    <div class="product-meta">
+                        <p><strong>Light:</strong> <span id="product-light"></span></p>
+                        <p><strong>Water:</strong> <span id="product-water"></span></p>
+                        <p><strong>Pet Safety:</strong> <span id="product-pets"></span></p>
+                    </div>
+
+                    <form id="product-add-form" class="product-add-form">
+                        <label for="quantity">Quantity</label>
+                        <!-- Quantity selector that sends value into cart logic -->
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </form>
+
+                    <p class="shipping-note">
+                        Free standard shipping on orders of 2 or more clippings. Ships within 3 to 5 business days.
+                    </p>
+
+                    <p>
+                        <a href="care.html" class="text-link">See detailed care tips</a> for this and other plants.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== GLOBAL: SITE FOOTER ========== -->
+    <footer class="site-footer">
+        <p>&copy; <span id="footer-year"></span> Wild & Rooted.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
