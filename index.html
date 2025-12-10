@@ -1,42 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ========== META AND HEAD CONTENT ========== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liz's Clippings</title>
+    <title>Wild & Rooted - Plant Cuttings and Greenery</title>
+    <meta name="description" content="Wild & Rooted offers curated plant cuttings and easy care tips to help you grow a calm, green space at home.">
+    
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts: Script + Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for cart icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Liz's Clippings</h1>
-        <p>Your source for fresh plant clippings, shipped free in the U.S.</p>
+    <!-- ========== GLOBAL: SITE HEADER ========== -->
+    <header class="site-header">
+        <div class="logo">
+            <!-- Brand title -->
+            <span class="logo-script">Wild & Rooted</span>
+        </div>
+        <nav class="main-nav">
+            <!-- Navigation links -->
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="care.html">Care Tips</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="header-cart">
+            <!-- Cart icon with dynamic item count -->
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count-badge" id="header-cart-count">0</span>
+            </a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to Liz's Clippings! We offer a carefully curated selection of plant clippings for your home or garden. All orders come with free ground shipping within the U.S. (excluding Puerto Rico and Hawaii).</p>
-    </section>
-
-    <section id="products">
-        <h2>Our Clippings</h2>
-        <div class="product-list">
-            <!-- Example product structure; repeat for each clipping variety -->
-            <div class="product-item">
-                <img src="path/to/image1.jpg" alt="Plant Name">
-                <h3>Plant Name</h3>
-                <p>Short description of the plant clipping.</p>
-                <p><strong>$12.00</strong></p>
-                <button>Add to Cart</button>
+    <main>
+        <!-- ========== HOME: HERO SECTION ========== -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bring Wild Calm Into Your Home</h1>
+                <p>Rooted cuttings, simple care guides, and gentle reminders that growth takes time. Start your plant journey with curated varieties that ship right to your door.</p>
+                <div class="hero-actions">
+                    <a href="shop.html" class="btn btn-primary">Shop Plant Cuttings</a>
+                    <a href="care.html" class="btn btn-outline">Learn Plant Care</a>
+                </div>
             </div>
-            <!-- Add more product items here -->
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <h2>Contact Us</h2>
-        <p>Email: info@lizsclippings.com</p>
-        <p>Follow us on social media!</p>
-        <!-- Social media links can go here -->
+        <!-- ========== HOME: FEATURED PLANTS ========== -->
+        <section class="section">
+            <header class="section-header">
+                <h2>Featured Plants</h2>
+                <p>Easy starter plants that forgive a missed watering or two.</p>
+            </header>
+            <div class="card-grid">
+                <!-- Each featured card links to product.html with a plant id in the URL -->
+                <article class="plant-card">
+                    <img src="images/pothos.jpg" alt="Golden pothos cutting" class="plant-image">
+                    <div class="plant-card-body">
+                        <h3>Pothos</h3>
+                        <p>Beginner friendly trailing vine that grows fast and looks lush on shelves.</p>
+                        <p class="price">$7.00 per clipping</p>
+                        <a href="product.html?id=pothos" class="btn btn-small">View Details</a>
+                    </div>
+                </article>
+
+                <article class="plant-card">
+                    <img src="images/snake.jpg" alt="Snake plant cutting" class="plant-image">
+                    <div class="plant-card-body">
+                        <h3>Snake Plant</h3>
+                        <p>Low light tolerant and nearly indestructible. Perfect for busy weeks.</p>
+                        <p class="price">$8.00 per clipping</p>
+                        <a href="product.html?id=snake" class="btn btn-small">View Details</a>
+                    </div>
+                </article>
+
+                <article class="plant-card">
+                    <img src="images/spider.jpg" alt="Spider plant cutting" class="plant-image">
+                    <div class="plant-card-body">
+                        <h3>Spider Plant</h3>
+                        <p>Air purifying classic that produces baby plantlets to share or repot.</p>
+                        <p class="price">$6.00 per clipping</p>
+                        <a href="product.html?id=spider" class="btn btn-small">View Details</a>
+                    </div>
+                </article>
+            </div>
+            <div class="section-cta-center">
+                <a href="shop.html" class="btn btn-secondary">View All Plants</a>
+            </div>
+        </section>
+
+        <!-- ========== HOME: CARE CALLOUT ========== -->
+        <section class="section section-soft">
+            <header class="section-header">
+                <h2>New To Plants?</h2>
+                <p>We keep things simple with straight forward care tips for every clipping.</p>
+            </header>
+            <div class="two-column">
+                <div>
+                    <ul class="bullet-list">
+                        <li>Plain language instructions for watering and light.</li>
+                        <li>Beginner friendly plants that can bounce back from mistakes.</li>
+                        <li>Care cards you can print or screenshot for quick reminders.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Every plant in the shop matches a care guide in the Care Tips section. That makes it easy to double check what your plant needs when life gets loud.</p>
+                    <a href="care.html" class="text-link">Browse Care Tips</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== HOME: ABOUT CALLOUT ========== -->
+        <section class="section">
+            <header class="section-header">
+                <h2>About Wild & Rooted</h2>
+            </header>
+            <div class="two-column">
+                <div>
+                    <p>Wild & Rooted grew out of one woman, one kid, a small space, and a lot of stubborn hope. These plants are raised with real life in mind. Busy days, tight budgets, and the need for something green that feels like a deep breath.</p>
+                </div>
+                <div>
+                    <p>Curious about the story behind the name, the greenhouse dreams, and the girl who helps pick out your plants</p>
+                    <a href="about.html" class="btn btn-outline">Read Our Story</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== GLOBAL: SITE FOOTER ========== -->
+    <footer class="site-footer">
+        <p>&copy; <span id="footer-year"></span> Wild & Rooted. All rights reserved.</p>
+        <p class="footer-subtext">Hand packed plant cuttings from Jacksonville, North Carolina.</p>
     </footer>
+
+    <!-- Shared script file for cart and dynamic behavior -->
+    <script src="scripts.js"></script>
 </body>
 </html>
