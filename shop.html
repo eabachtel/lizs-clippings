@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== META AND HEAD CONTENT ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Wild & Rooted Plant Cuttings</title>
+    <meta name="description" content="Shop plant cuttings from Wild & Rooted. Beginner friendly plants with simple care tips and free standard shipping to most states.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========== GLOBAL: SITE HEADER ========== -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-script">Wild & Rooted</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html" aria-current="page">Shop</a>
+            <a href="care.html">Care Tips</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="header-cart">
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count-badge" id="header-cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== SHOP: PAGE HEADER ========== -->
+        <section class="page-header">
+            <h1>Shop Plant Cuttings</h1>
+            <p>Each clipping is rooted or ready to root, with simple care instructions included.</p>
+        </section>
+
+        <!-- ========== SHOP: PRODUCT GRID ========== -->
+        <section class="section">
+            <div class="shop-toolbar">
+                <!-- Simple note for inventory and shipping message -->
+                <p class="inventory-note">
+                    Free basic shipping within the continental U.S. Excludes Hawaii and Puerto Rico.
+                </p>
+            </div>
+
+            <!-- The product grid is generated from the catalog in scripts.js -->
+            <div id="shop-grid" class="card-grid">
+                <!-- JavaScript will insert product cards here using the catalog data -->
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== GLOBAL: SITE FOOTER ========== -->
+    <footer class="site-footer">
+        <p>&copy; <span id="footer-year"></span> Wild & Rooted.</p>
+        <p class="footer-subtext">Thank you for supporting a small woman owned plant business.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
